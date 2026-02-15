@@ -19,7 +19,11 @@ export const Location = () => {
         {/* 대중교통 섹션 */}
         <div className="transport-section">
           <span className="content">
-            🚇 지하철: 용산역 (1호선), 신용산역 (4호선), 효창공원앞역 (6호선) 하차 후 도보 10-15분
+          🚇 용산역 (<span className="line1">1호선</span>), 신용산역 (<span className="line4">4호선</span>)
+          <br />→ <b>용산역 3번출구</b> 방면 외부 연결다리 통해 이동 (도보 10 - 15분)
+          <br /><br></br>
+          🚇 효창공원앞역 (<span className="line6">6호선</span>)
+          <br />→ <b>3번출구</b>로 나와서 용산전자상가 방면으로 이동 (도보 10 - 15분)
           </span>
         </div>
 

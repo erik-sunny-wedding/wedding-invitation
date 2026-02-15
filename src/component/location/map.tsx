@@ -1,6 +1,7 @@
 import { useEffect, useState, useRef } from "react"
 import { useKakao, useNaver } from "../store"
 import nmapIcon from "../../icons/nmap-icon.png"
+import gmapIcon from "../../icons/google-map.png"
 import knaviIcon from "../../icons/knavi-icon.png"
 import tmapIcon from "../../icons/tmap-icon.png"
 import LockIcon from "../../icons/lock-icon.svg?react"
@@ -9,6 +10,7 @@ import {
   KMAP_PLACE_ID,
   LOCATION,
   NMAP_PLACE_ID,
+  GMAP_PLACE_ID,
   WEDDING_HALL_POSITION,
 } from "../../const"
 import { NAVER_MAP_CLIENT_ID } from "../../env"
@@ -119,8 +121,28 @@ const NaverMap = () => {
           }}
         >
           <img src={nmapIcon} alt="naver-map-icon" />
-          네이버 지도
+          <span style={{ fontSize: "14px" }}>네이버 지도</span>
         </button>
+
+        <button
+          onClick={() => {
+            const device = checkDevice();
+            // Google Maps 복용(Universal) 링크: 앱이 설치되어 있으면 앱으로, 아니면 웹으로 자동 연결됩니다.
+            const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=Google&query_place_id=${GMAP_PLACE_ID}`;
+
+            if (device === "ios" || device === "android") {
+              // 모바일에서는 현재 창에서 앱 전환 유도
+              window.location.href = googleMapsUrl;
+            } else {
+              // 데스크톱에서는 새 탭에서 열기
+              window.open(googleMapsUrl, "_blank");
+            }
+          }}
+        >
+          <img src={gmapIcon} alt="google-map-icon" />
+          <span style={{ fontSize: "14px" }}>구글맵</span>
+        </button>
+
         <button
           onClick={() => {
             switch (checkDevice()) {
@@ -144,7 +166,7 @@ const NaverMap = () => {
           }}
         >
           <img src={knaviIcon} alt="kakao-navi-icon" />
-          카카오 내비
+          <span style={{ fontSize: "14px" }}>카카오 내비</span>
         </button>
         <button
           onClick={() => {
@@ -167,7 +189,7 @@ const NaverMap = () => {
           }}
         >
           <img src={tmapIcon} alt="t-map-icon" />
-          티맵
+          <span style={{ fontSize: "14px" }}>T맵</span>
         </button>
       </div>
     </>

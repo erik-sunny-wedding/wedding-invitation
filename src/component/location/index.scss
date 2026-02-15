@@ -138,13 +138,6 @@
       font-size: 0.95rem;
     }
   }
-
-  .content {
-    // 3. 내용 폰트 사이즈 줄이기
-    font-size: 0.8rem;
-    line-height: 1.5;
-    color: #444;
-    padding-left: 1.7rem; // 아이콘 너비만큼 들여쓰기하면 더 깔끔합니다
   }
 
   .heading {
@@ -153,9 +146,30 @@
       color: var(--theme-color);
   }
 
-  // .content {
-  //     font-size: 0.9rem;
-  //     line-height: 1.4;
-  //   }
+  .line1, .line4, .line6 {
+    padding: 2px 6px;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 0.95em;
   }
+
+  .line1 {
+    background: #003399;
+    color: white;
+  }
+
+  .line4 {
+    background: #00aaff;
+    color: white;
+  }
+
+  .line6 {
+    background: #8b5a2b;
+    color: white;
+  }
+
+  .content {
+      font-size: 0.7rem;
+      line-height: 1.4;
+    }
 }
