@@ -121,7 +121,7 @@ const NaverMap = () => {
           }}
         >
           <img src={nmapIcon} alt="naver-map-icon" />
-          <span style={{ fontSize: "14px" }}>네이버 지도</span>
+          <span style={{ fontSize: "12px" }}>네이버 지도</span>
         </button>
 
         <button
@@ -140,7 +140,7 @@ const NaverMap = () => {
           }}
         >
           <img src={gmapIcon} alt="google-map-icon" />
-          <span style={{ fontSize: "14px" }}>구글맵</span>
+          <span style={{ fontSize: "12px" }}>구글맵</span>
         </button>
 
         <button
@@ -166,7 +166,7 @@ const NaverMap = () => {
           }}
         >
           <img src={knaviIcon} alt="kakao-navi-icon" />
-          <span style={{ fontSize: "14px" }}>카카오 내비</span>
+          <span style={{ fontSize: "12px" }}>카카오 내비</span>
         </button>
         <button
           onClick={() => {
@@ -189,7 +189,7 @@ const NaverMap = () => {
           }}
         >
           <img src={tmapIcon} alt="t-map-icon" />
-          <span style={{ fontSize: "14px" }}>T맵</span>
+          <span style={{ fontSize: "12px" }}>T맵</span>
         </button>
       </div>
     </>
