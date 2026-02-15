@@ -1,4 +1,5 @@
 .location {
+  font-size: 0.85rem;
   .addr {
     line-height: 2;
     margin-bottom: 1rem;
@@ -101,7 +102,7 @@
       align-self: center;
     }
 
-    .transportation-icon-wrapper {
+  .transportation-icon-wrapper {
       display: flex;
       justify-content: center;
       .transportation-icon {
@@ -112,15 +113,49 @@
       }
     }
 
-    .heading {
+  .transport-section {
+    margin-top: 1.5rem;
+    text-align: left; // 왼쪽 정렬 (이미지처럼 가운데 정렬 원하면 center)
+    padding: 0 1rem;
+  }
+
+  .transport-header {
+    display: flex;
+    align-items: center; // 아이콘과 글씨 세로 중앙 정렬
+    gap: 0.5rem; // 아이콘과 글씨 사이 간격
+    margin-bottom: 0.3rem;
+
+  .transportation-icon {
+      // 1. 아이콘 크기 똑같이 맞추기
+      width: 1.2rem;
+      height: 1.2rem;
+      flex-shrink: 0; // 아이콘이 찌그러지지 않게 방지
+    }
+
+  .transport-title {
+      // 2. 아이콘 옆 글씨 스타일
+      font-weight: bold;
+      font-size: 0.95rem;
+    }
+  }
+
+  .content {
+    // 3. 내용 폰트 사이즈 줄이기
+    font-size: 0.8rem;
+    line-height: 1.5;
+    color: #444;
+    padding-left: 1.7rem; // 아이콘 너비만큼 들여쓰기하면 더 깔끔합니다
+  }
+
+  .heading {
       font-size: 1rem;
       opacity: 0.7;
       color: var(--theme-color);
-    }
+  }
 
-    .content {
-      font-size: 0.9rem;
-      line-height: 1.4;
-    }
+  // .content {
+  //     font-size: 0.9rem;
+  //     line-height: 1.4;
+  //   }
   }
 }

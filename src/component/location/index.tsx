@@ -14,8 +14,26 @@ export const Location = () => {
           <div className="detail">{LOCATION_ADDRESS}</div>
         </div>
         <Map />
+
+        <br></br>
+        {/* 대중교통 섹션 */}
+        <div className="transport-section">
+          <span className="content">
+            🚇 지하철: 용산역 (1호선), 신용산역 (4호선), 효창공원앞역 (6호선) 하차 후 도보 10-15분
+          </span>
+        </div>
+
+        <br></br>
+        {/* 자가용 섹션 */}
+        <div className="transport-section">
+          <span className="content">
+            🚘 주차장 이용 시 웨딩홀과 바로 연결 (무료)
+          </span>
+        </div>
+
       </LazyDiv>
-      <LazyDiv className="card location">
+
+      {/* <LazyDiv className="card location">
         <div className="location-info">
           <div className="transportation-icon-wrapper">
             <BusIcon className="transportation-icon" />
@@ -25,28 +43,28 @@ export const Location = () => {
           <div className="content">
             * 지하철 이용시
             <br />
-            지하철 2호선 <b>낙성대역 4번출구</b> 나와서
+            - 1호선/경의중앙선 <b>용산역</b>, 4호선 <b>신용산역</b> 하차
             <br />
-            → 첫번째 골목 끼고 좌회전
-            <br />→ 마을버스 <b>관악 02번</b> 승차
-            <br />→ <b>서울대후문·연구공원 정류장</b> 하차
+            → 용산역 3번 출구 방면 아이파크몰 연결다리
             <br />
-            → 길 건너 간판 참고해 도보로 100m 이동
+            → 도보 10 - 15분
+            <br /><br></br>
+
+            - 6호선 <b>효창공원앞역</b> 하차
             <br />
-            검은색 피라미드 유리 건물입니다.
+            → 3번 출구로 나와서 
+            <br />
+            → <b>용산전자상가</b> 방면으로 이동
+            → 도보 10 - 15분
+
           </div>
           <div />
           <div className="content">
             * 버스 이용 시
             <br />
-            - 간선(파랑): 461, 641
+            - <b>용산 전자상가-전자랜드 정류장</b> 하차 (도보 약 3~5분)
             <br />
-            - 지선(초록): 5413, 5524, 5528
-            <br />
-            반드시 <b>낙성대입구</b> 하차
-            <br />→ 마을버스 <b>관악 02번</b> 이용
-            <br />
-            이하 위와 동일합니다.
+            - <b>신용산역(중) 정류장</b> 하차 (도보 약 10~15분)
           </div>
         </div>
         <div className="location-info">
@@ -58,21 +76,16 @@ export const Location = () => {
           <div className="content">
             네이버 지도, 카카오 네비, 티맵 등 이용
             <br />
-            <b>서울대학교 연구공원 웨딩홀</b> 검색
+            <b>그랜드 머큐어 엠베서더 호텔 서울 용산</b> 검색
             <br />
             - 주차 요금은 무료입니다.
             <br />
             (주차장 이용 시 웨딩홀과 바로 연결)
           </div>
           <div />
-          <div className="content">
-            <b>
-              ※ 서울대학교 정, 후문을 통과할 경우 통행료가 발생하므로
-              유의바랍니다. 낙성대 방향으로 이용해주세요.
-            </b>
-          </div>
+
         </div>
-      </LazyDiv>
+      </LazyDiv> */}
     </>
   )
 }

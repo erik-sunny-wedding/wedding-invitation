@@ -3,9 +3,9 @@ import ArrowLeft from "../../icons/angle-left-sm.svg?react"
 import { LazyDiv } from "../lazyDiv"
 import { Button } from "../button"
 import { useModal } from "../modal"
-import { GALLERY_IMAGES } from "../../images"
+import { GALLERY_IMAGES_2 } from "../../images"
 
-const CAROUSEL_ITEMS = GALLERY_IMAGES.map((item, idx) => (
+const CAROUSEL_ITEMS = GALLERY_IMAGES_2.map((item, idx) => (
   <div className="carousel-item" key={idx}>
     <img src={item} draggable={false} alt={`${idx}`} />
   </div>
@@ -30,13 +30,13 @@ type DragOption = {
 
 type ClickMove = "left" | "right" | null
 
-export const Gallery = () => {
+export const Gallery2 = () => {
   const { openModal, closeModal } = useModal()
   const carouselRef = useRef<HTMLDivElement>({} as HTMLDivElement)
 
   useEffect(() => {
     // preload images
-    GALLERY_IMAGES.forEach((image) => {
+    GALLERY_IMAGES_2.forEach((image) => {
       const img = new Image()
       img.src = image
     })
@@ -278,7 +278,7 @@ export const Gallery = () => {
 
   return (
     <LazyDiv className="card gallery">
-      <h2 className="english">Memories of 12 Years</h2>
+      <h2 className="english">Wedding Snap - London & Seoul</h2>
       <div className="carousel-wrapper">
         <div
           className="carousel"
@@ -353,7 +353,8 @@ export const Gallery = () => {
             />
           ))}
         </div> */}
-          <div className="carousel-indicator">
+
+        <div className="carousel-indicator">
           <span className="number-indicator">
             {slide + 1} / {CAROUSEL_ITEMS.length}
           </span>
@@ -371,7 +372,7 @@ export const Gallery = () => {
             content: (
               <>
                 <div className="photo-list">
-                  {GALLERY_IMAGES.map((image, idx) => (
+                  {GALLERY_IMAGES_2.map((image, idx) => (
                     <img
                       key={idx}
                       src={image}

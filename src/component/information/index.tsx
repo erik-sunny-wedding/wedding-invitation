@@ -152,9 +152,9 @@ export const Information = () => {
   if (STATIC_ONLY) {
     return (
       <>
-        <LazyDiv className="card information">
+        {/* <LazyDiv className="card information">
           <Information1 />
-        </LazyDiv>
+        </LazyDiv> */}
         <LazyDiv className="card information">
           <Information2 />
         </LazyDiv>
@@ -164,9 +164,9 @@ export const Information = () => {
 
   return (
     <LazyDiv className="card information">
-      <Information1 />
-      <Information2 />
+      {/* <Information1 /> */}
       <AttendanceInfo />
+      <Information2 />
     </LazyDiv>
   )
 }
