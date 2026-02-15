@@ -28,7 +28,7 @@ function App() {
         <LazyDiv className="card-group">
           {/* 결혼식 날짜 (달력) */}
           <Calendar />
-\          {/* 오시는길 */}
+          {/* 오시는길 */}
           <Location />
         </LazyDiv>
 

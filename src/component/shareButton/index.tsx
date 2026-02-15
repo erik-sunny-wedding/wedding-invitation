@@ -12,6 +12,11 @@ import { LazyDiv } from "../lazyDiv"
 import { useKakao } from "../store"
 
 const baseUrl = import.meta.env.BASE_URL
+console.log('현재 베이스 Image URL:', window.location.protocol +
+                "//" +
+                window.location.host +
+                baseUrl +
+                "/preview_image.png")
 
 export const ShareButton = () => {
   const kakao = useKakao()
@@ -37,7 +42,7 @@ export const ShareButton = () => {
                 "//" +
                 window.location.host +
                 baseUrl +
-                "/preview_image.jpg",
+                "/preview_image.png",
               link: {
                 mobileWebUrl:
                   window.location.protocol +
