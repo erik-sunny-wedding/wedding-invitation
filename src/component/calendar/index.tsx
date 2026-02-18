@@ -7,6 +7,8 @@ import {
   WEDDING_DATE_FORMAT,
 } from "../../const"
 import { LazyDiv } from "../lazyDiv"
+import { AttendanceInfo } from "./attendance"
+
 
 const firstDayOfWeek = WEDDING_DATE.startOf("month").day()
 const daysInMonth = WEDDING_DATE.daysInMonth()
@@ -130,6 +132,7 @@ export const Calendar = () => {
           )}
         </div>
       </div>
+    <AttendanceInfo />
     </LazyDiv>
   )
 }

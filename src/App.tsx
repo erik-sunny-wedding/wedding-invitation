@@ -12,6 +12,7 @@ import { LazyDiv } from "./component/lazyDiv"
 import { ShareButton } from "./component/shareButton"
 import { STATIC_ONLY } from "./env"
 
+
 function App() {
   return (
     <div className="background">
