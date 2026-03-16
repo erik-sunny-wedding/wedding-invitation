@@ -19,14 +19,23 @@ export const Location = () => {
         {/* 대중교통 섹션 */}
         <div className="transport-section">
           <span className="content">
-          🚇 용산역 (<span className="line1">1호선</span>, <span className="lineKH">경의중앙선</span>)
-          <br />→ <b>용산역</b> 하차 후 <b>3번출구</b>
-          <br /> 도보 10분 <b>호텔(그랜드머큐어)</b> 도착
+          🚇 <b>지하철  이용시</b>
+          <br />
+          * 용산역 (<span className="line1">1호선</span>, <span className="lineKH">경의중앙선</span>), 신용산역 (<span className="line4">4호선</span>)
+          <br />→ 하차 후 <b>용산역 3번출구</b> 이동
+          <br />→도보 5-10분 <b>호텔(그랜드머큐어)</b> 도착
           <br /><br></br>
-          🚌 (간선) 505번, (지선) 5012
+          {/* 🚇 신용산역 (<span className="line4">4호선</span>)
+          <br />→ <b>신용산역</b> 하차 후 <b>3번출구</b> - 용산역으로 이동
+          <br /> 용산역 3번출구 - 도보 10분 <b>호텔(그랜드머큐어)</b> 도착
+          <br /><br></br> */}
+
+          🚌 <b>버스 이용시</b>
+          <br />
+          * (간선) 505, (지선) 5012
           <br />→ <b>용산 전자상가</b> 하차 후 도보 3분거리
           <br /><br></br>
-          🚌 (간선) 400번, (지선) 5012, 0017, (마을버스) 용산03
+          * (간선) 400, (지선) 0017, (마을버스) 용산03
           <br />→ <b>신용산 지하차도</b> 하차 후 도보 10분거리
           </span>
         </div>
