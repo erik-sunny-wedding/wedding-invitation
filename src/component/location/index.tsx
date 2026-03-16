@@ -19,13 +19,15 @@ export const Location = () => {
         {/* 대중교통 섹션 */}
         <div className="transport-section">
           <span className="content">
-          🚇 용산역 (<span className="line1">1호선</span>), 신용산역 (<span className="line4">4호선</span>)
-          <br />→ <b>용산역 3번출구</b> 방면 외부 연결다리 통해 이동
-          <br /> (도보 10 - 15분)
+          🚇 용산역 (<span className="line1">1호선</span>, <span className="lineKH">경의중앙선</span>)
+          <br />→ <b>용산역</b> 하차 후 <b>3번출구</b>
+          <br /> 도보 10분 <b>호텔(그랜드머큐어)</b> 도착
           <br /><br></br>
-          🚇 효창공원앞역 (<span className="line6">6호선</span>)
-          <br />→ <b>3번출구</b>로 나와서 용산전자상가 방면으로 이동
-          <br /> (도보 10 - 15분)
+          🚌 (간선) 505번, (지선) 5012
+          <br />→ <b>용산 전자상가</b> 하차 후 도보 3분거리
+          <br /><br></br>
+          🚌 (간선) 400번, (지선) 5012, 0017, (마을버스) 용산03
+          <br />→ <b>신용산 지하차도</b> 하차 후 도보 10분거리
           </span>
         </div>
 
@@ -33,7 +35,7 @@ export const Location = () => {
         {/* 자가용 섹션 */}
         <div className="transport-section">
           <span className="content">
-            🚘 주차장 이용 시 웨딩홀과 바로 연결 (무료)
+            🚘 주차안내: <b>그랜드머큐어 호텔구역</b>에 주차 후 엘리베이터로 2층 이동
           </span>
         </div>
 
