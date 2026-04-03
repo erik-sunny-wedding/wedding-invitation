@@ -16,7 +16,7 @@ export const WEDDING_DATE_FORMAT = `2026년 10월 24일 12시${WEDDING_DATE.minu
 // 예: 예식일 8월 -> 8월 15일 광복절
 export const HOLIDAYS = [5, 9]
 
-export const LOCATION = "그랜드 머큐어 엠베서더 호텔 서울 용산, 2층 랑데부홀"
+export const LOCATION = "그랜드 머큐어 엠베서더 호텔 서울 용산,\n2층 랑데부홀"
 export const LOCATION_ADDRESS = "서울특별시 용산구 청파로20길 95"
 
 // 카카오톡 공유 시 위치 정보로 사용할 주소.
