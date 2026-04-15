@@ -69,7 +69,7 @@ export const GROOM_FULLNAME = "장명준"
 export const GROOM_FIRSTNAME = "명준"
 export const GROOM_TITLE = "차남"
 export const GROOM_FATHER = "장경민"
-export const GROOM_MOTHER = "故 유강순"
+export const GROOM_MOTHER = "강주원"
 export const GROOM_INFO = [
   {
     relation: "신랑",
