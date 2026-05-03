@@ -41,7 +41,7 @@ export const GMAP_PLACE_ID = "ChIJH_HwzwSifDURGhaBm8jpLs8"
 
 export const BRIDE_FULLNAME = "최윤선"
 export const BRIDE_FIRSTNAME = "윤선"
-export const BRIDE_TITLE = "장녀"
+export const BRIDE_TITLE = "딸"
 export const BRIDE_FATHER = "故 최용팔"
 export const BRIDE_MOTHER = "김복례"
 export const BRIDE_INFO = [
@@ -67,9 +67,9 @@ export const BRIDE_INFO = [
 
 export const GROOM_FULLNAME = "장명준"
 export const GROOM_FIRSTNAME = "명준"
-export const GROOM_TITLE = "차남"
+export const GROOM_TITLE = "아들"
 export const GROOM_FATHER = "장경민"
-export const GROOM_MOTHER = "강주원"
+export const GROOM_MOTHER = "故 유강순"
 export const GROOM_INFO = [
   {
     relation: "신랑",

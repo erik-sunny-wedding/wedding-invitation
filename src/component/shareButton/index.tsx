@@ -34,7 +34,7 @@ export const ShareButton = () => {
             address: SHARE_ADDRESS,
             addressTitle: SHARE_ADDRESS_TITLE,
             content: {
-              title: `M.J ❤️ Sunny의 결혼식에 초대합니다.`,
+              title: `Eik ❤️ Sunny의 결혼식에 초대합니다.`,
               description:
                 WEDDING_DATE.format(WEDDING_DATE_FORMAT) + "\n" + LOCATION,
               imageUrl:
