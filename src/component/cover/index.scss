@@ -21,7 +21,10 @@
 
   .image-wrapper {
     width: 100%;
-    height: 30rem;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top; /* 또는 center, bottom 등 */
+    // height: 30rem;
     overflow: hidden;
     display: flex;
     align-items: center;
