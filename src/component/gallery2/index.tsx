@@ -187,7 +187,6 @@ export const Gallery2 = () => {
       const status = statusRef.current
 
       if (status === "clicked") {
-        e.preventDefault()
         const xMove =
           e.targetTouches[0].clientX - dragOptionRef.current.startingClientX
         const yMove =
@@ -233,7 +232,7 @@ export const Gallery2 = () => {
     const carouselElement = carouselRef.current
 
     window.addEventListener("mousemove", onMouseMove)
-    carouselElement.addEventListener("touchmove", onTouchMove)
+    carouselElement.addEventListener("touchmove", onTouchMove, { passive: false })
     window.addEventListener("mouseup", onMouseTouchUp)
     window.addEventListener("touchend", onMouseTouchUp)
     return () => {
