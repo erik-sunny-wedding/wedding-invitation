@@ -16,7 +16,7 @@ console.log('현재 베이스 Image URL:', window.location.protocol +
                 "//" +
                 window.location.host +
                 baseUrl +
-                "/preview_image.png")
+                "/preview_image_v2.png")
 
 export const ShareButton = () => {
   const kakao = useKakao()
@@ -42,7 +42,7 @@ export const ShareButton = () => {
                 "//" +
                 window.location.host +
                 baseUrl +
-                "/preview_image.png",
+                "/preview_image_v2.png",
               link: {
                 mobileWebUrl:
                   window.location.protocol +
