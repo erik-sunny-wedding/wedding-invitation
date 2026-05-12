@@ -32,10 +32,10 @@ export const Location = () => {
 
           🚌 <b>버스 이용시</b>
           <br />
-          * (간선) 505, (지선) 5012
+          * (<span className="blineG">간선</span>) 505, (<span className="blineJ">지선</span>) 5012
           <br />→ <b>용산 전자상가</b> 하차 후 도보 3분거리
           <br /><br></br>
-          * (간선) 400, (지선) 0017, (마을버스) 용산03
+          * (<span className="blineG">간선</span>) 400, (<span className="blineJ">지선</span>) 0017, (<span className="blineM">마을버스</span>) 용산03
           <br />→ <b>신용산 지하차도</b> 하차 후 도보 10분거리
           </span>
         </div>
